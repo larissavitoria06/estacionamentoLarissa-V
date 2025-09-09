@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento Larissa V</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Estacionamento Larissa V</h1>
+
+<section id="carrossel">
+    <div class="carrossel-container">
+        <div class="carrossel-imagens">
+            <img src="https://conteudo.imguol.com.br/c/bol/fotos/49/2018/07/19/estacionamento-garagem-compartilhada-garagem-de-shopping-estacionar-carros-parados-veiculo-veiculos-carro-estacionado-vaga-de-garagem-1532002954127_900x506.jpg" alt="Imagem 1">
+           </div>
+      </div>
+</section>
+
+    </header>
+    <main>
+        <section id="veiculos-lista">
+            <h2>Estadias de Hoje</h2>
+            <div id="veiculos-container">
+              
+            </div>
+        </section>
+
+        <section id="cadastro-veiculo" class="hidden">
+            <h2>Cadastro de Veículos</h2>
+            <form id="form-cadastro">
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" required>
+                
+                <label for="entrada">Entrada:</label>
+                <input type="datetime-local" id="entrada" required>
+                
+                <label for="saida">Saída:</label>
+                <input type="datetime-local" id="saida" required>
+                
+                <label for="valor-hora">Valor Hora:</label>
+                <input type="number" id="valor-hora" required>
+                
+                <button type="submit">Salvar</button>
+                <button type="button" id="cancelar-btn">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <br>
+
+<div class="menu">
+            <button id="novo-veiculo-btn">Novo Veículo</button>
+            <button id="editar-veiculos-btn">Editar Veículos</button>
+            <button id="relatorio-btn">Relatório de Estadias</button>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
